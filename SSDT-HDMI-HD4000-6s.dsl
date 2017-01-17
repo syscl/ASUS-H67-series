@@ -1,22 +1,6 @@
-/*
- * Intel ACPI Component Architecture
- * AML Disassembler version 20131218-64 [Jan  8 2014]
- * Copyright (c) 2000 - 2013 Intel Corporation
- * 
- * Disassembly of iASLCdfKwM.aml, Sat May 21 00:18:12 2016
- *
- * Original Table Header:
- *     Signature        "SSDT"
- *     Length           0x00000129 (297)
- *     Revision         0x01
- *     Checksum         0x3E
- *     OEM ID           "syscl"
- *     OEM Table ID     "H67hack"
- *     OEM Revision     0x00003000 (12288)
- *     Compiler ID      "INTL"
- *     Compiler Version 0x20130725 (538117925)
- */
-DefinitionBlock ("iASLCdfKwM.aml", "SSDT", 1, "syscl", "H67hack", 0x00003000)
+// HDMI inject properties for Asus H67 Series
+// Note HD4000 on 6 series
+DefinitionBlock ("", "SSDT", 1, "APPLE ", "H67hack", 0x00003000)
 {
     External (_SB_.PCI0, DeviceObj)
     External (_SB_.PCI0.B0D3._ADR)
@@ -125,6 +109,6 @@ DefinitionBlock ("iASLCdfKwM.aml", "SSDT", 1, "syscl", "H67hack", 0x00003000)
         }
     }
         
-    Store ("SSDT-HDMI-HD3000-6s.aml github.com/syscl/ASUS-H67-series", Debug)
+    Store ("SSDT-HDMI-HD4000-6s.aml github.com/syscl/ASUS-H67-series", Debug)
 }
 
